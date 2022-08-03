@@ -31,27 +31,27 @@ COVIDLOCAL = f"""
 ├ **Currently Cured🙂** - `{local_recovered}`
 ├ **Still Being treated🤒** - `{local_active_cases}`
 └ **Total deaths⚰** - `{local_deaths}`
-🔄Updated on {update_date_time}
+Updated on {update_date_time}
 """
 
 COVIDGLOBAL = f"""
 **Global Covid Condition 🌎**
-┌ **New Patients😷** - `{global_new_cases}`
+┌ **New Patients 😷** - `{global_new_cases}`
 ├ **New Deaths⚰** - `{global_new_deaths}`
 ├ **Total Patients🤒** - `{global_total_cases}`
 ├ **Currently Cured🙂** - `{global_recovered}`
 └ **Total deaths⚰** - `{global_deaths}`
-🔄Updated on {update_date_time}
+Updated on {update_date_time}
 """
 
 REPLY_MARKUPL = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(f"🌎Global", callback_data="globalcovide"),
-                    InlineKeyboardButton(f"🇱🇰Local" , callback_data="localcovide") 
+                    InlineKeyboardButton(f"Global", callback_data="globalcovide"),
+                    InlineKeyboardButton(f"Local" , callback_data="localcovide") 
                 ],
                 [
-                    InlineKeyboardButton("💡 Bot 💡", url="https://t.me/ImSithijabot")
+                    InlineKeyboardButton("💡 Bot 💡", url="https://t.me/ImRishmikaBot")
                 ],
 
             ]

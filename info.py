@@ -1,18 +1,18 @@
 import os
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ForceReply
 
-START_IMG = "https://telegra.ph/file/a349ecb55c622ecf27b07.jpg"
+START_IMG = "https://telegra.ph/file/e758fc65d2522df6c46c3.jpg"
 
 START_TEXT = """
 Hello there 👋
-**I am Assistant bot of [Sithija](https://t.me/Itsmesithija)**
+**I am Bot of [Team Semmy](https://t.me/TeamSemmy)**
 """
 
 START_BUTTON = InlineKeyboardMarkup(
                [
                 [
-                 InlineKeyboardButton("❤️\u200d🔥About❤️\u200d🔥", url='https://t.me/ItsMeSithija'),
-                 InlineKeyboardButton("⭕️Subscribe⭕️", url='https://youtube.com/channel/UCFH_E0cu7U8GMjEJGnSvYjA')
+                 InlineKeyboardButton("❤️\u200d🔥About❤️\u200d🔥", url='https://t.me/AboutRishmika'),
+                 InlineKeyboardButton("⭕️Subscribe⭕️", url='https://www.youtube.com/channel/UCTIprdrvIiMjFdFwJgnmTUg')
                 ],
                 [
                   InlineKeyboardButton("◈━━━━━━━━━━━━━◈", callback_data="stats_callback"),
@@ -25,7 +25,7 @@ START_BUTTON = InlineKeyboardMarkup(
 
 HELP_TEXT = """ Hey there☄️
 I have some fun and useful tools
-So you can get a help about them🚀 """
+So you can get a help about them 🚀 """
 
 HELP_BUTTON = InlineKeyboardMarkup(
                [
@@ -40,7 +40,7 @@ HELP_BUTTON = InlineKeyboardMarkup(
                   InlineKeyboardButton("📛More Tools📛", callback_data='toolmenu')
                 ],
                 [
-                  InlineKeyboardButton("Repo", url='https://github.com/Sithijatd/Telegram-feedback-bot')
+                  InlineKeyboardButton("Subscribe", url='https://www.youtube.com/channel/UCTIprdrvIiMjFdFwJgnmTUg')
                 ],
                 [
                   InlineKeyboardButton("🔙Back", callback_data='startmenu'),
@@ -49,8 +49,8 @@ HELP_BUTTON = InlineKeyboardMarkup(
 )
 
 BOTSTATUS_TEXT = """
-**Bᴏᴛ Sᴛᴀᴛᴜꜱ** ```rᴏᴏᴛ : ~ $ bᴀꜱʜ```
-Assistant of ItsMeSithija
+**Bᴏᴛ Sᴛᴀᴛᴜs** ```rᴏᴏᴛ : ~ $ bᴀsʜ```
+Assistant of @ImRishmika
 """
 
 BOTSTATUS_BUTTON = InlineKeyboardMarkup(
@@ -74,7 +74,7 @@ LOGO_BUTTON = InlineKeyboardMarkup(
 )
 
 TOOLS_TEXT = """
-🧰Help for More Tools🧰
+Help for More Tools
 Here is the additional Tools of this bot.
 
 Available commands
@@ -113,15 +113,15 @@ QUOTE_BUTTON = InlineKeyboardMarkup(
         ]]
 )
 
-SITHIJATD_TEXT = """ Hey☘️,\n you can find Sithija in these social medias."""
+SITHIJATD_TEXT = """ Hey☘️,\n you can find My Ower Rishmika Sandanu in these social medias."""
 
 SITHIJATD_BUTTONS = InlineKeyboardMarkup(
               [
                 [
-                  InlineKeyboardButton('🔵Telegram🔵' , url='https://t.me/ItsMeSithija'),
+                  InlineKeyboardButton('🔵Telegram🔵' , url='https://t.me/ImRishmika'),
                 ],
                 [
-                  InlineKeyboardButton('⭕Youtube⭕' , url='https://youtube.com/channel/UCFH_E0cu7U8GMjEJGnSvYjA'),
+                  InlineKeyboardButton('⭕Youtube⭕' , url='https://www.youtube.com/channel/UCTIprdrvIiMjFdFwJgnmTUg'),
                 ], 
               ]
 )

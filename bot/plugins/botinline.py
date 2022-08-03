@@ -8,13 +8,13 @@ from info import START_IMG, START_TEXT, START_BUTTON, HELP_TEXT, HELP_BUTTON, SI
 
 @bot.on_callback_query(filters.regex("auto_rep"))
 async def autorep(_, CallbackQuery):
-    await bot.answer_callback_query(CallbackQuery.id, text="He he, Don't disturb me😁", show_alert=False)
+    await bot.answer_callback_query(CallbackQuery.id, text="Im Semmy Bot. I m Usefull Bot In Telegram. You Can Join News Channel @TeamSemmy \n Send /help You Can See My Menu.", show_alert=False)
 
 AUTOREP_BUTTON = InlineKeyboardMarkup(
               [
                 [
-                  InlineKeyboardButton('🔵Telegram🔵' , url='https://t.me/ItsMeSithija'),
-                  InlineKeyboardButton('⭕Youtube⭕' , url='https://youtube.com/channel/UCFH_E0cu7U8GMjEJGnSvYjA'),
+                  InlineKeyboardButton('🔵 Telegram 🔵' , url='https://t.me/TeamSemmy'),
+                  InlineKeyboardButton('⭕ Youtube ⭕' , url='https://www.youtube.com/channel/UCTIprdrvIiMjFdFwJgnmTUg'),
                 ], 
                 [
                  InlineKeyboardButton('〣────────────────〢' , callback_data='auto_rep'),
@@ -25,12 +25,12 @@ AUTOREP_BUTTON = InlineKeyboardMarkup(
 @bot.on_inline_query()
 async def search(_, query):
     answers = []
-    if query.query == "SITHIJA_TD":
+    if query.query == "ImRishmika":
         answers.append(
             InlineQueryResultArticle(
-                title="Sithija's Assistant",
-                thumb_url="https://telegra.ph/file/3bbc2afd81355ba72f5d3.jpg",
-                input_message_content=InputTextMessageContent(f"Hello there 👋\n\n🔰Please Use @ImSithijabot to contract me🔰\n🍀Sithija is away from Telegram\n\n💥Reason - O/L exam✍\n 📊Status - Offline⛔️"),
+                title="Semmy Bot",
+                thumb_url="https://telegra.ph/file/c50c46bc87f398c315f6d.png",
+                input_message_content=InputTextMessageContent(f"Hello there 👋\n\n🔰Please Use @ImRishmikaBot to contract My Ower🔰\n🍀Rishmika is away from Telegram\n\n💥Reason - My Mother does not like Telegram Sorry Bro\n 📊 Status - Offline⛔️"),
                 reply_markup=AUTOREP_BUTTON,
                 )
             )
@@ -61,7 +61,7 @@ async def Inline_Search(_, query: InlineQuery):
     if t == '':
       results.append(InlineQueryResultPhoto(
           photo_url=START_IMG,
-          title='Sithija\'s Assistant Bot',
+          title='Semmy Bot',
           caption=START_TEXT,
           parse_mode='html',
           reply_markup=START_BUTTON)

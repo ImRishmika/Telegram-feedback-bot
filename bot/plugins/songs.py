@@ -55,7 +55,7 @@ def song(client, message):
 ⏳ **Duration:** `{duration}`
 👀 **Views:** `{views}` 
 👤**Requested By**: {message.from_user.mention()}
-📤 **Uploaded By: [❦Iᴛ'ꜱ Mᴇ Sɪᴛʜɪᴊᴀ❦](https://t.me/ItsMeSithija)**
+📤 **Uploaded By: [Rishmika](https://t.me/ImRishmika)**
         """)
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
@@ -64,7 +64,7 @@ def song(client, message):
         s = message.reply_audio(audio_file, caption=rep, performer=performer, thumb=thumb_name, title=title, duration=dur)
         m.delete()
     except Exception as e:
-        m.edit('❌ Error occurred.')
+        m.edit('❌ Error occurred. Report @TeamSemmyChat')
         print(e)
 
     try:

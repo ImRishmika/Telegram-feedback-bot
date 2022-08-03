@@ -33,8 +33,8 @@ from googletrans import Translator
 async def bot_msg_chatinfo():
     stats = f"""
 ℹ️This is a feature of this botℹ️
-So this message not send by the sithija.
-@ItsMeSithija
+So this message not send by the Rishmika.
+@ImRishmika
 """
     return stats
 
@@ -61,7 +61,7 @@ async def chatbot(_, message):
     lang = tr.translate(message.text).src
     trtoen = (message.text if lang=="en" else tr.translate(message.text, dest="en").text).replace(" ", "%20")
     text = trtoen.replace(" ", "%20") if len(message.text) < 2 else trtoen
-    affiliateplus = requests.get(f"https://api.affiliateplus.xyz/api/chatbot?message={text}&botname=Sithija's%20Assistant&ownername=Sithija%20Dewmina&name=Sithija&master=Sithija%20Dewmina&build=Sithija%20Dewmina&job=Working%20for%20sithija&scmaster=Sithija&user=1")
+    affiliateplus = requests.get(f"https://api.affiliateplus.xyz/api/chatbot?message={text}&botname=Semmy's%20Assistant&ownername=Sithija%20Dewmina&name=Rishmika&master=Rishmika%20Sandanu&build=Rishmika%20Sandanu&job=Working%20for%20Rishmika&scmaster=Rishmika&user=1")
     textmsg = (affiliateplus.json()["message"])
     msg = tr.translate(textmsg, src='en', dest=lang)
     await message.reply_text(msg.text,

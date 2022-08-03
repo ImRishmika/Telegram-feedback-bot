@@ -27,14 +27,20 @@ async def bot_sys_stats():
     disk_usage = psutil.disk_usage('/').percent
     total_users = await db.total_users_count()
     stats = f"""
-💡Sithija's assistant bot
+💡 Team Semmy Bot Users And More InforMation
 
-• 💽 Tᴏᴛᴇʟ Dɪsᴋ Sᴘᴀᴄᴇ: {total}
-• 💿 Uꜱᴇᴅ Sᴘᴀᴄᴇ: {used}({disk_usage}%)
-• 📊 Fʀᴇᴇ Sᴘᴀᴄᴇ: {free}
-• 🔋 Cᴘᴜ Usᴀɢᴇ: {cpu_usage}%
-• 💾 Rᴀᴍ Usɢᴇ: {ram_usage}%
-• ⚡️ Tᴏᴛᴀʟ Usᴇʀs 👀: {total_users}
+• Tᴏᴛᴇʟ Dɪsᴋ Sᴘᴀᴄᴇ: {total}
+• Usᴇᴅ Sᴘᴀᴄᴇ: {used}({disk_usage}%)
+• Fʀᴇᴇ Sᴘᴀᴄᴇ: {free}
+• Cᴘᴜ Usᴀɢᴇ: {cpu_usage}%
+• Rᴀᴍ Usɢᴇ: {ram_usage}%
+• Tᴏᴛᴀʟ Usᴇʀs: {total_users}
+• Ower : @ImRishmika
+• Version : python 3.06
+
+Powerd by @TeamSemmy
+Devoloper : @ImRishmika
+Sponsor : @Emo_Bot_Industry
 
 @Team_Semmy_Bot
 """

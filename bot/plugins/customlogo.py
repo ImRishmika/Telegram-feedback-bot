@@ -16,10 +16,10 @@ from bot.plugins.fsub import ForceSub
 repmark = InlineKeyboardMarkup(
       [
         [
-        InlineKeyboardButton(text="💡About💡", url=f"http://t.me/ItsMeSithija") 
+        InlineKeyboardButton(text="💡About💡", url=f"http://t.me/ImRishmika") 
         ],
         [
-         InlineKeyboardButton(text="⭕Subscribe⭕", url=f"https://youtube.com/channel/UCFH_E0cu7U8GMjEJGnSvYjA") 
+         InlineKeyboardButton(text="⭕Subscribe⭕", url=f"https://www.youtube.com/channel/UCTIprdrvIiMjFdFwJgnmTUg") 
         ]
       ]      
     )
@@ -28,9 +28,9 @@ imgcaption = f"""
 ☘️** Logo Created Successfully**✅
 〢─────────────〣
 🔥 **Created by** :
-  [Sithija's Assistant](http://t.me/ImSithijabot)
+  [Team Semmy](http://t.me/Team_Semmy)
 ⚡️ **Powered By **  :
-  [Its Me Sithija](http://t.me/ItsMeSithija)
+  [Rishmika Sandanu](http://t.me/ImRishmika)
 〣─────────────〢
 """
 
@@ -38,7 +38,7 @@ imgcaption = f"""
 @bot.on_message(filters.command("xlogo") & ~filters.forwarded)
 async def logomake(_, message: Message):
     if len(message.command) != 2:
-        return await message.reply_text("Please give a text.\nEx:`/logo Sithija's Assistant` ")
+        return await message.reply_text("Please give a text.\nEx:`/logo Semmy` ")
     else:
         pass
     m = await message.reply('Designing your logo...wait!')
@@ -60,7 +60,7 @@ async def logomake(_, message: Message):
     Image_STD.save("masklogo.jpg")
     await message.reply_photo(
                 photo=f"masklogo.jpg",
-                caption=f"Created by @ImSithijabot",
+                caption=f"Created by @Team_Semmy_Bot",
             )
     await m.delete()
 
@@ -68,7 +68,7 @@ async def logomake(_, message: Message):
 @ForceSub
 async def logomake(_, message: Message):
     if len(message.command) != 2:
-        return await message.reply_text("Please give a text.\nEx:`/mlogo Sithija` ")
+        return await message.reply_text("Please give a text.\nEx:`/mlogo Semmy` ")
     else:
         pass
     m = await message.reply('Designing your logo...wait!')
@@ -107,7 +107,7 @@ async def logomake(_, message: Message):
 @ForceSub
 async def logomake(_, message: Message):
     if len(message.command) != 2:
-        return await message.reply_text("Please give a text.\nEx:`/plogo Sithija's Assistant` ")
+        return await message.reply_text("Please give a text.\nEx:`/plogo Semmy` ")
     else:
         pass
     m = await message.reply('Designing your logo...wait!')

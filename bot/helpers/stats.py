@@ -29,14 +29,14 @@ async def bot_sys_stats():
     stats = f"""
 💡Sithija's assistant bot
 
-• 💽Tᴏᴛᴇʟ Dɪꜱᴋ Sᴘᴀᴄᴇ: {total}
-• 💿Uꜱᴇᴅ Sᴘᴀᴄᴇ: {used}({disk_usage}%)
-• 📊Fʀᴇᴇ Sᴘᴀᴄᴇ: {free}
-• 🔋Cᴘᴜ Uꜱᴀɢᴇ: {cpu_usage}%
-• 🖲Rᴀᴍ Uꜱᴀɢᴇ: {ram_usage}%
-• ⚡️Tᴏᴛᴀʟ Uꜱᴇʀꜱ👀: {total_users}
+• 💽 Tᴏᴛᴇʟ Dɪsᴋ Sᴘᴀᴄᴇ: {total}
+• 💿 Uꜱᴇᴅ Sᴘᴀᴄᴇ: {used}({disk_usage}%)
+• 📊 Fʀᴇᴇ Sᴘᴀᴄᴇ: {free}
+• 🔋 Cᴘᴜ Usᴀɢᴇ: {cpu_usage}%
+• 💾 Rᴀᴍ Usɢᴇ: {ram_usage}%
+• ⚡️ Tᴏᴛᴀʟ Usᴇʀs 👀: {total_users}
 
-@ImSithijabot
+@Team_Semmy_Bot
 """
 
     return stats

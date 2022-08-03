@@ -5,7 +5,7 @@ from pyrogram.types import Message
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from info import SITHIJATD_TEXT, SITHIJATD_BUTTONS
 
-@bot.on_message(filters.regex("@sithijatd"))
+@bot.on_message(filters.regex("@ImRishmika"))
 async def sithijatdmsg(_, message):
    # m = await message.reply("|( ͡❛ ͜ʖ ͡❛)")
    #     await m.edit("||っ ͡❛ ͜ʖ ͡❛|っ🧠")
